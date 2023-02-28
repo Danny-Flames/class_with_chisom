@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+
+    <div id="root">
+        This is where we practiced.
+    </div>
+ 
+    <script>
+        // *********  STRING - STRING - STRING => '' or ""
+        // Methods: length, slice, replace, substring, toUpperCase(), toLowerCase(), charAt()
+        // (1) String - length: 
+        var mySentence = "I live in railway compound.";
+        var mySentence2 = "SHE IS MAD AT US.";
+        let sentenceSize = mySentence.length;   // string.length
+
+        // To access the value of a string, you use the index/number/position of that character in the string.
+        // Note that every string, array and object are zero(0) indexed.  i.e they always start from index zero.
+        console.log(mySentence[8])   //  - n
+        console.log(mySentence[13])  // - l
+
+        // (2) String - slice(startIndex, endIndex) - this is used to get/print out a particular range of characters:
+        console.log(mySentence.slice(4, 15))
+        console.log(mySentence.slice(4, 24))
+
+        // (3) String - toUpperCase() - this converts all characters in the string to upper case(capital letters).
+        console.log(mySentence.toUpperCase())
+
+        // (4) String - toLowerCase() - this converts all characters in the string to lower case(small letters).
+        console.log(mySentence2.toLowerCase())
+
+
+        // ********  ARRAY - ARRAY - ARRAY   => []
+        const bestFruits = ['Apple', 'Banana', 'Kiwi', 'Tangerine', 'Orange', 'Pineapple', 'Cheryl', 'Strawberry', "Water melon"];
+        const registeredVoters = ["Victor", "Chisom", "Mayor", "Charles", "Daniel", "Emmanuel", "Victoria", "Peace", "Samuel", "Kenny", "AMos"];
+
+        console.log(bestFruits)
+
+        // (1) .length - to get the size of an array 
+        console.log(bestFruits.length)
+
+        // (2) Use index to access each item in the array 
+        console.log(bestFruits[7])  // - Strawberry
+        console.log(bestFruits[3])  // - Tangerine
+        console.log(bestFruits[0])  // - Apple
+        console.log(bestFruits[20])  // - undefined
+
+        // To get the last item in an array, use "array.length - 1";
+        console.log(registeredVoters[registeredVoters.length - 1])
+
+        // Changing an array element/item
+        registeredVoters[3] = "Uche";
+
+        console.log(registeredVoters)
+
+        registeredVoters[5] = "Akin";
+
+        console.log(registeredVoters)
+
+
+        // ********  OBJECTS - OBJECTS - OBJECTS => {}
+        let myFrnd = {
+            name: "Micheal Smith",
+            age: 12,
+            location: "Abuja"
+        }
+
+        console.log(myFrnd)
+
+        // To access the keys/properties/item of an object, we use the dot notation 
+        console.log(myFrnd.age)
+        console.log(myFrnd.name)
+
+
+        // ***** Array of objects 
+        const myGuys = [
+            {
+                id: 1,
+                name: "Charles",
+                age: 10,
+                hobbies: ['Dancing', 'Singing', 'Laughing']
+            },
+            {
+                id: 2,
+                name: "Peter",
+                age: 12,
+                hobbies: ['Smoking', 'Walking']
+            },
+            {
+                id: 3,
+                name: "Grace",
+                age: 4,
+                hobbies: ['Preaching', 'Evangelize', 'Sing']
+            },
+        ]
+
+        console.log(myGuys)
+        console.log(myGuys[1])
+        console.log(myGuys[1].name)
+        console.log(myGuys[1].hobbies[1])
+
+    </script>
+</body>
+
+</html>

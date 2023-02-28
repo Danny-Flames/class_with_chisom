@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        Solutions here
+    </div>
+
+    <script>
+        const databaseUsersJan = [
+            {
+                id: 1,
+                name: "Arthur Bush",
+                location: "USA",
+                hobbies: ["Swimming", "Dancing", "Singing", "Knacking", "Kissing"],
+                bestFrnd: {
+                    name: "Samuel Stone",
+                    age: 40,
+                    height: 45.78
+                }
+            },
+            {
+                id: 2,
+                name: "Kenny Black",
+                location: "London",
+                hobbies: ["Smoking", "Drinking", "Laughing", "Reading"],
+                bestFrnd: {
+                    name: "Nnamdi Dave",
+                    age: 24,
+                    height: 65.01
+                }
+            }
+        ]
+        // Access/print-out the title of his second movie-type and the name of the last producer in the producers array.
+        const newEmployee = {
+            name: "John Doe",
+            age: 15,
+            favoriteColours: ["Red", "Yellow", "Green", "Blue"],
+            bestMovieTypes: {
+                id: 1,
+                types: [
+                    {
+                        id: 1,
+                        title: 'Adventures'
+                    },
+                    {
+                        id: 2,
+                        title: 'Cartoon'
+                    },
+                ],
+                producers: ["Brandon Austin", "Kelvin Powell", "Jessy Black", "Randon Arthur"]
+            }
+        }
+        // Solutions: 
+        console.log(databaseUsersJan)
+        console.log(databaseUsersJan[1])
+        console.log(databaseUsersJan[1].hobbies)
+        console.log(databaseUsersJan[1].hobbies[databaseUsersJan[1].hobbies.length - 1])
+        console.log(databaseUsersJan[1].bestFrnd.height)
+        console.log(newEmployee)
+        console.log(newEmployee.bestMovieTypes.types[1].title)
+        console.log(newEmployee.bestMovieTypes.producers[3])
+        console.log(newEmployee.bestMovieTypes.producers[newEmployee.bestMovieTypes.producers.length - 1])
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        I am the danny branch.
+        I contain the most updated codes.
+    </div>
+
+    <script>
+        // (1) Access/print-out the title of the last favorite subject of the favorite friend of the best friend of this user. 
+        // (2) Access/print out the last discipline of this user's bestfriend favorite friend's favorite subjects.
+
+
+
+        const usersDatabase = [
+            {
+                id: 1,
+                name: "Samson Stone",
+                location: "London",
+                hobbies: ["Wahala", "Blue Film", "Jogging", "Gyming"],
+                bestFrnd: {
+                    name: "Samuel Stone",
+                    age: 27.6,
+                    height: 33.21,
+                    favFrnd: {
+                        name: "Emma Funny",
+                        location: "Maryland",
+                        hobbies: ["Talking", "Business", "Touring"],
+                        favSubjects: [
+                            {
+                                id: 1,
+                                title: "Physics",
+                                discipline: ["Engineering", "Science", "Technology", "Performance Art"]
+                            },
+                            {
+                                id: 2,
+                                title: "Literature",
+                                discipline: ["Art", "Performance", "Science"],
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+
+        const answer = usersDatabase[0].bestFrnd.favFrnd.favSubjects[usersDatabase[0].bestFrnd.favFrnd.favSubjects.length-1].discipline[usersDatabase[0].bestFrnd.favFrnd.favSubjects[usersDatabase[0].bestFrnd.favFrnd.favSubjects.length-1].discipline.length -1]
+
+        console.log(answer)
+
+
+    </script>
+</body>
+
+</html>

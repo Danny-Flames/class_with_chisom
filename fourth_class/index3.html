@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+
+    <div>
+        Practing javascript functions
+    </div>
+
+
+    <script>
+        // Functions: are programs written to perform a specific task. i.e they're lines
+        // of codes written for a particular functionality.    Syntax:  'function function_name(){}'
+        // Take note that every function after being declared(created), it must be invoked/called when it's needed
+        // Also note that a function may or may not return a value/data.
+        // Any value that's being passed into a function when it's called is known as an "argument".
+        // The returned value of a function will always be printed/outputed to the brpowser screen. For you to 
+        // be able to view this returned value, you must log the function to the console(console.log(func()))
+
+        // Task-1: Create a function that returns the addition of 10 and 5.
+        function sumNumbers() {
+            let total = 10 + 5;
+            return total;
+        }
+
+        console.log(sumNumbers())
+
+        // Task-2: Create a function that takes in two numbers and return the sum of both numbers. 
+        // So we have a write this function to be dynamic in such a way that any user can invoke it and 
+        // pass arguments into it and it will return the addition of the arguments(numbers in this case).
+        
+        function sumNumbers2(num1, num2) {
+            let total = num1 + num2;
+            return total;
+        }
+
+        console.log(sumNumbers2(4, 6))
+        console.log(sumNumbers2(20, 30))
+        console.log(sumNumbers2(200, 300))
+        console.log(sumNumbers2(121, 79))
+
+        // Task-3: Create a function that displays a user's name, age, location and marriage status
+        function displayUserDetails(name, age, location, marriageStatus) {
+            let sentence = "My name is " + name + ". I am " + age + "yrs old. I live in " + location + ". I am " + marriageStatus;
+
+            return sentence;
+        }
+
+        console.log(displayUserDetails("David", 14, "Abuja", "Not married"))
+        console.log(displayUserDetails("Ifeanyi", 46, "Jigawa", "Married"))
+
+        // Task-4: Display all the steps involved in other for you to get to the office 
+
+        // Manual Process 
+        // console.log("Wake up")
+        // console.log("Pray")
+        // console.log("Brush Teeth")
+        // console.log("Bath")
+        // console.log("Dress up")
+        // console.log("Eat")
+        // console.log("Traffic")
+        // console.log("Go To Work")
+
+        // Automatic process of displaying out the steps using function
+        let stepsToGetToTheOffice = ["Wake up", "Pray", "Bath", "Dress up", "Eat", "Go To Work"];
+
+        // Declare(create) the function
+        function goToWork() {
+            for (let i = 0; i < stepsToGetToTheOffice.length; i++) {
+                console.log(stepsToGetToTheOffice[i])
+            }
+        }
+
+        // Invoke(call) the function now 
+        goToWork()
+
+
+    </script>
+</body>
+
+</html>

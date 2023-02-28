@@ -1,0 +1,24 @@
+
+*** Html
+
+
+*** Css
+Flexbox 
+Padding
+Margin
+Transitions
+Animation
+Position(relative, absolute, fixed, static)
+z-index
+color(transparent)
+!imporntant keyword
+anchor tag(a- how to remove the underline)
+Pseudo classes
+
+
+*** Javascript
+- Variables
+- Data type
+- Functions
+- Conditionals
+- Events 

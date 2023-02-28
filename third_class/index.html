@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Third class</h2>
+    </div>
+
+    <script>
+        // Conditional Statements, Loops, Functions
+        // Logical operators:  ==, ===, >, <, >=, <=, !=, !==, &&, ||
+
+        // (1) Conditional Statements - makes a block of code to be executed or not based on a condition. If, else if, else
+        let myName = "Samuel";
+        const myAge = 12;
+
+        // (a) ==            equals to <-> This compares only the values.
+        if (myAge == 12) {
+            console.log("You are 12yrs old.")
+        } else {
+            console.log('You are not 12yrs old.')
+        }
+
+        // (b) > and <       greater than and less than
+        if (myAge < 12) {
+            console.log("You are less than 12yrs old.")
+        } else if (myAge > 12) {
+            console.log("You are more than 12yrs old.")
+        } else {
+            console.log('We dont know your age.')
+        }
+
+        // (c) !=     not equals to
+        if (myAge != 12) {
+            console.log("You are not 12yrs old.")
+        } else {
+            console.log("You are 12yrs old.")
+        }
+
+        if (myName != "samuel") {
+            console.log("You are not samuel")
+        } else {
+            console.log("You are Samuel")
+        }
+
+        // (d) ===    Compares both the value and data-type;
+        if (myAge === '12') {
+            console.log('You are 12yrs old.')
+        } else {
+            console.log('We dont know your age.')
+        }
+
+        // (e) combining if, if else and else with greater than, less than and equals to.
+        var favSentence = "Communication";
+        var favNum = 200;
+
+        if (favSentence == "Education") {
+            console.log("Education")
+        } else if (favSentence == "Announcement") {
+            console.log("Announcement")
+        } else if (favSentence == "communication") {
+            console.log("Communication")
+        } else {
+            console.log("No option.")
+        }
+
+        if (favNum < 200) {
+            console.log("less than 200")
+        } else if (favNum > 200) {
+            console.log("greater than 200")
+        } else if (favNum < 220) {
+            console.log("less than 220")
+        } else if (favNum > 180) {
+            console.log("greater than 180")
+        } else {
+            console.log("No idea")
+        }
+
+        // (f) >= and <=          '>' or '=='    '<' or '=='
+        const thisYear = 2023;
+        let nextYear = 2024;
+
+        if (thisYear >= 2023) {
+            console.log("greater than equals 2023")
+        } else if (thisYear == 2023) {
+            console.log("We are in 2023")
+        } else {
+            console.log("We are all confused")
+        }
+
+        if (nextYear != 2024) {
+            console.log("not equals to 2024")
+        } else if (nextYear < 2024) {
+            console.log("less than 2024")
+        } else if (nextYear > 2023) {
+            console.log("greater than 2023")
+        } else if (nextYear <= 2024) {
+            console.log("will be less than equals 2024")
+        } else {
+            console.log("We are all confused")
+        }
+
+        // (g)   && ---> AND, both conditions must be true for the entire expression to be considered true. 
+        const babyGirl = 'Ella';
+        const babyGirlAge = 16;
+
+        if (babyGirl == "ella" && babyGirlAge < 20) {
+            console.log("I am answer 1")
+        } else if (babyGirl == "Ella" && babyGirlAge < 16) {
+            console.log("I am answer 2")
+        } else if (babyGirl === "Ela" && babyGirlAge <= 16) {
+            console.log("I am answer 3")
+        } else if (babyGirlAge > 14 && babyGirlAge <= 16) {
+            console.log(" I am answer 4")
+        } else if (babyGirl == "ella" && babyGirlAge > 14) {
+            console.log("I am answer 5")
+        } else {
+            console.log("none of the above")
+        }
+
+        // (h)  ||   ---> OR, once one condition is met, the entire expression to be considered true. 
+        if (babyGirl == "ella" || babyGirlAge < 10 || babyGirlAge < 15 || babyGirlAge < 20) {
+            console.log("I am answer 1")
+        } else if (babyGirl == "Ella" || babyGirlAge < 16) {
+            console.log("I am answer 2")
+        }else {
+            console.log("none of the above")
+        }
+
+
+    </script>
+</body>
+
+</html>
