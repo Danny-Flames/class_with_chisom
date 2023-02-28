@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .myClass {
+            border: 2px solid forestgreen;
+            padding: 20px;
+            margin: 15px auto;
+            width: 100%;
+        }
+
+        .class-1 {
+            background-color: black;
+            color: white;
+        }
+
+        .class-3 {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .myClass.class-5 {
+             background-color: orangered;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        Welcome to DOM class.
+    </div>
+    <div id="myOutput">
+        1
+    </div>
+    <h2>Document Object Model</h2>
+    <div>
+        Html elements inside the body tags are always called nodes.(h1, h2, p, span...)
+    </div>
+    <div class="myClass class-1">
+        Hey class 1
+    </div>
+    <div class="myClass class-2">
+        Hey class 2
+    </div>
+    <div class="myClass class-3">
+        Hey class 3
+    </div>
+    <div class="myClass class-4">
+        Hey class 4
+    </div>
+    <div class="myClass class-5">
+        Hey class 5
+    </div>
+    <div class="myClass class-6">
+        Hey class 6
+    </div>
+
+    <script>
+        let documentObj = document.getElementById('myOutput');
+        let myClassElements = document.getElementsByClassName("myClass");
+        let fifthClassElement = document.querySelector(".myClass.class-5")
+
+        // documentObj.innerText = "2";
+        // documentObj.innerHTML = "Hello Chisom"
+
+        console.log(myClassElements[myClassElements.length - 1]) // To get the last element(div with class name of myClass)
+        console.log(fifthClassElement.innerText)
+
+
+
+
+    </script>
+</body>
+
+</html>
