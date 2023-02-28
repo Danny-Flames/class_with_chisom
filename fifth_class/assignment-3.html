@@ -17,7 +17,8 @@
         <div style="border-bottom: 2px solid black;">
             <h2>Conditional Statements and functions</h2>
             <p>
-                (1) Write a program that collects three arguments(two numbers and a sign) from a user and return the <br /> 
+                (1) Write a program that collects three arguments(two numbers and a sign) from a user and return the
+                <br />
                 computation of the numbers based on the sign passed in.
             </p>
             <p>
@@ -31,6 +32,39 @@
 
     <script>
 
+        // (1) Compute numbers based on the sign passed in.
+        function computeNums(num1, num2, sign) {
+            let result;
+
+            if (sign == "+") {
+                result = num1 + num2;
+            } else if (sign == "-") {
+                result = num1 - num2;
+            }
+
+            return result;
+        }
+
+        console.log(computeNums(10, 5, "+"))
+        console.log(computeNums(10, 5, "-"))
+
+        // (2) Square a number
+        function squareNum(num) {
+            let output = num * num;
+            return output;
+        }
+
+        console.log(squareNum(4))
+        console.log(squareNum(5))
+        console.log(squareNum(6))
+
+        // (3) Area of a given Rectangle - l * b * h
+        function areaRectangle(l, b, h) {
+            let result = l * b * h;
+            return result;
+        }
+
+        console.log(areaRectangle(6, 2, 3))
 
     </script>
 </body>
