@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
 </head>
+
 <body>
-    
+
     <div>
-        Dom Manipulation
+        <h2> Modulus operator</h2>
+
     </div>
 
 
     <script>
+        // Modulus operator:   %
+        // It divides a dividend(top) by a divisor(bottom) and returns the remainder.
+        // Even numbers: are number that can be divided by 2. It will always have a remainder of zero(0)
+        // Odd numbers: are numbers that can not be divided by 2.
 
-        
+        // Question: Write a program that returns if an inputed number is even or odd.
+
+        function checkNum(num) {
+            let result;
+
+            if (num % 2 == 0) {
+                result = num + " is an even number";
+            } else if (num % 2 != 0) {
+                result = num + " is an odd number";
+            }
+
+            return result;
+        }
+
+        console.log(checkNum(593))
+        console.log(checkNum(217))
+
+
     </script>
 </body>
+
 </html>
