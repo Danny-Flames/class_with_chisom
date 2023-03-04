@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .container {
+            border: 2px solid brown;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+
+        .event-listeners-box {
+            border: 2px solid forestgreen;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        #box1,
+        #box2 {
+            border: 1px solid black;
+            padding: 20px 40px;
+            border-radius: 4px;
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            margin: 20px 0;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 6px;
+            border: none;
+            padding: 10px 18px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h2>Event Listeners</h2>
+            <p>
+                Event listeners are functions that are being triggered when an event is fired.
+            </p>
+            <p>
+                The following are examples of event listeners: <br />
+                onclick, onmouseover, onmouseout, onload, onmouseenter, and so on...
+            </p>
+        </div>
+        <div class="event-listeners-box">
+            <h2>onclick Event</h2>
+            Click on the button below to trigger an onclick event.
+
+            <div>
+                <button class="btn" onclick="sayHello()">Click Me To Alert Hello</button>
+                <!-- <input type="button" value="CLick Me 2"> -->
+            </div>
+        </div>
+
+        <div class="event-listeners-box">
+            <h2>onclick Event</h2>
+            Click on the button below to change the text in the box below.
+
+            <br />
+            <div id="box1">
+                Initial Text
+            </div>
+
+            <div>
+                <button class="btn" onclick="changeText()">Change Box Text</button>
+            </div>
+        </div>
+
+        <div class="event-listeners-box">
+            <h2>onclick Event</h2>
+            Click on the button below to change the background color of the box.
+
+            <br />
+            <div id="box2">
+                Background color will be updated
+            </div>
+
+            <div>
+                <button class="btn" onclick="changeBgColor()">Change Background Color</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Function to always say hello to the user 
+        function sayHello() {
+            alert("Hey guys!")
+        }
+
+        // Function to manipulate the DOM 
+        const txtBox = document.getElementById("box1")
+
+        function changeText() {
+            txtBox.innerHTML = "Text has been updated";
+        }
+
+        // Function to change background color
+        const boxReference = document.getElementById("box2");
+
+        function changeBgColor() {
+
+            if (boxReference.style.backgroundColor == "red") {
+                boxReference.style.backgroundColor = "white";
+                boxReference.style.color = "black";
+            } else {
+                boxReference.style.backgroundColor = "red"
+                boxReference.style.color = "white"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

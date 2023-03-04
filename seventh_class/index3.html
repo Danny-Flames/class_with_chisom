@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .container {
+            border: 2px solid brown;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+
+        .event-listeners-box {
+            border: 2px solid forestgreen;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+            height: 500;
+        }
+
+        .btn {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>On Mouse Over (onmouseover) and onload event</h2>
+
+        <div class="event-listeners-box" onmouseover="changeBoxSize()" onmouseout="changeBoxSize2()">
+            Mouse over me to increase my size
+        </div>
+        <div>
+            Y-axis represent vertical axis(top to bottom) 
+        </div>
+        <div>
+            X-axis represent horizontal axis(left to right) 
+        </div>
+    </div>
+
+
+    <script>
+
+        // Onload Event 
+        window.onload = function() {
+            setTimeout(() => {
+                alert("Hey guys, you're doing well. Kudos!!!")
+            }, 4000)
+        }
+
+        const boxes = document.getElementsByClassName("event-listeners-box");
+        const firstBox = boxes[0];
+
+        function changeBoxSize() {
+            firstBox.style.width = "700px";
+            firstBox.style.height = "700px";
+        }
+
+        function changeBoxSize2() {
+            firstBox.style.width = "300px";
+            firstBox.style.height = "500px";
+        }
+
+    </script>
+</body>
+
+</html>
