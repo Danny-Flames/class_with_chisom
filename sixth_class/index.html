@@ -63,15 +63,59 @@
     </div>
 
     <script>
+
+        // The "document" object tells you everything about the present document - "html" in this case. 
+        // When logged to the console, you'll see every properties/key of this object(document).
+        // Working with the getElementById, getElementsByClassName, and querySelector properties of this "document" object.
+
+        // (1). You'll always use "getElementById" to make reference to an html element with the specified/indicated "id"
+        // i.e the "id" you indicated in this "getElementById" method of the document object must exist on the html document.
+
+        // (2) You'll always use "getElementsByClassName" to make reference to an html element with the specified/indicated "class"
+        // Note that, this will always return an array because the same "class" can be given to different html elements so 
+        // it assumes you have more than one element on the page(document) having/using that indicated class.
+
+        // (3) You'll always use "querySelector" to make reference to an html element.
+        // Take note that this property/method works pretty different from others. It works just as the "CSS Selectors"
+        // works, that is, you'll target an element just as you will if you were to style(using the css rules).
+        // If this is the css selector to stylea specific element:  .grandParent .parent .child { height: "100px" },
+        // Making reference to such element from javascript using qeurySelector, you'd use the format below:
+        // document.querySelector('.grandParent .parent .child')
+        
         let documentObj = document.getElementById('myOutput');
         let myClassElements = document.getElementsByClassName("myClass");
         let fifthClassElement = document.querySelector(".myClass.class-5")
 
-        // documentObj.innerText = "2";
-        // documentObj.innerHTML = "Hello Chisom"
+        documentObj.innerText = "2";
+        documentObj.innerHTML = "Hello Chisom"
+
+        console.log(documentObj)
 
         console.log(myClassElements[myClassElements.length - 1]) // To get the last element(div with class name of myClass)
         console.log(fifthClassElement.innerText)
+
+
+        const chisomDocument = {
+            getChisomName: function(name) {
+                let personName = name;
+                return personName;
+            },
+            getChisomSalary: function(salary) {
+                let amount = "#" + salary;
+                return amount;
+            },
+            favoriteClass: function(inputedClass) {
+                let favClass = "." + inputedClass;
+                return favClass;
+            }
+        }
+
+        // console.log(chisomDocument.getChisomName("Chisom"))
+        // console.log(chisomDocument.getChisomSalary("5000"))
+
+
+        // console.log(document)
+
 
 
 
